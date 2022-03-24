@@ -73,7 +73,7 @@ function step(timestamp) {
     // på samma sätt kan du även dölja uppgraderingar som inte kan köpas
     if (moneyPerClick == 10 && !achievementTest) {
         achievementTest = true;
-        message('Du har hittat en FOSSIL!', 'achievement');
+        message('You have found a SNAX!', 'achievement');
     }
 
     window.requestAnimationFrame(step);
@@ -107,17 +107,17 @@ window.addEventListener('load', (event) => {
  */
 upgrades = [
     {
-        name: 'Fin sop',
+        name: 'Poto Snax Baker',
         cost: 10,
         amount: 1,
     },
     {
-        name: 'Spade',
+        name: 'Poto Herder',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Hjälpreda',
+        name: 'Aurora Potealis',
         cost: 1000,
         amount: 100,
     },
@@ -148,19 +148,19 @@ function createCard(upgrade) {
     header.classList.add('title');
     const cost = document.createElement('p');
 
-    header.textContent = `${upgrade.name}, +${upgrade.amount} per sekund.`;
-    cost.textContent = `Köp för ${upgrade.cost} benbitar.`;
+    header.textContent = `${upgrade.name}, +${upgrade.amount} per second.`;
+    cost.textContent = `Buy for ${upgrade.cost} Poto Snax.`;
 
     card.addEventListener('click', (e) => {
         if (money >= upgrade.cost) {
             moneyPerClick++;
             money -= upgrade.cost;
             upgrade.cost *= 1.5;
-            cost.textContent = 'Köp för ' + upgrade.cost + ' benbitar';
+            cost.textContent = 'Buy for ' + upgrade.cost + ' Poto Snax';
             moneyPerSecond += upgrade.amount;
-            message('Grattis du har lockat till dig fler besökare!', 'success');
+            message('Congratulations you have attracted more potos!', 'success');
         } else {
-            message('Du har inte råd.', 'warning');
+            message('Not enough minerals.', 'warning');
         }
     });
 
