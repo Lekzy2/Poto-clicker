@@ -112,15 +112,21 @@ upgrades = [
         amount: 1,
     },
     {
-        name: 'Poto Herder',
+        name: 'Lonely Poto',
         cost: 100,
         amount: 10,
     },
     {
-        name: 'Aurora Potealis',
+        name: 'Poto Herder',
         cost: 1000,
         amount: 100,
     },
+    {
+        name: 'Aurora Potealis',
+            cost: 2500,
+        amount: 250,
+    },
+    
 ];
 
 /* createCard är en funktion som tar ett upgrade objekt som parameter och skapar
