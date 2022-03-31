@@ -210,16 +210,16 @@ footer {
  * meddelanden. Javascript används för att lägga till stilen på meddelandet
  */
 .warning {
-    background-color: palevioletred;
+    background-color: rgb(201, 74, 106);
 }
 
 .success {
-    background-color: mediumspringgreen;
+    background-color: rgb(0, 155, 95);
 }
 
 .achievement {
     color: #121212;
-    background-color: rebeccapurple;
+    background-color: rgb(236, 193, 48);
 }
 
 /* dessa kort används för spelets uppgraderingar 
@@ -236,7 +236,7 @@ footer {
 }
 
 .card:hover {
-    background-color: #dfdfdf;
+    background-color: #292929;
 }
 /* klassen används på kortets titel, font-weight: 600 gör fonten fetare, en normal
  * font vikt är oftast 400
